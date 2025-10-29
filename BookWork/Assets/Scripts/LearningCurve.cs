@@ -1,16 +1,23 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class LearningCurve : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public int CurrentAge = 30;
+    public int AddedAge = 1;
+
     void Start()
     {
-        
+        ComputeAge();
     }
 
-    // Update is called once per frame
-    void Update()
+
+    /// <summary>
+    /// Computes a modified age by adding two varibles together
+    /// </summary>
+    void ComputeAge()
     {
-        
+        Debug.Log(CurrentAge + AddedAge);
     }
 }
