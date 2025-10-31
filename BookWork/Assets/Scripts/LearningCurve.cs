@@ -4,20 +4,17 @@ using UnityEngine;
 
 public class LearningCurve : MonoBehaviour
 {
-    public int CurrentAge = 30;
-    public int AddedAge = 1;
+    public string CharacterClass = "Ranger";
 
     void Start()
     {
-        ComputeAge();
+        int CharacterHealth = 100;
+        Debug.Log(CharacterClass + " - HP: " + CharacterHealth);
     }
 
-
-    /// <summary>
-    /// Computes a modified age by adding two varibles together
-    /// </summary>
-    void ComputeAge()
+    void CreateCharacter()
     {
-        Debug.Log(CurrentAge + AddedAge);
+        string CharacterName = "Aragon";
+        Debug.Log(CharacterName + " - " + CharacterClass);
     }
 }
